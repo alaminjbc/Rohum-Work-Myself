@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduGenius - AI Educational Assistant</title>
+    <!-- Add marked.js for Markdown rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>EduGenius</h1>
+        <p>Your AI Educational Assistant</p>
+    </header>
+    
+    <div class="chat-container" id="chat-container">
+        <div class="welcome" id="welcome">
+            <h2>Welcome to EduGenius!</h2>
+            <p>Ask me any educational question or upload a document to analyze.</p>
+        </div>
+    </div>
+    
+    <div class="input-area">
+        <div class="controls">
+            <button id="mic-btn">🎤 Voice</button>
+            <input type="file" id="document-input" style="display: none" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+            <button id="doc-btn">📄 Upload</button>
+        </div>
+        
+        <textarea id="user-input" placeholder="Type your message here..."></textarea>
+        
+        <div class="document-preview" id="document-preview">
+            <span id="document-name"></span>
+            <button id="remove-document" style="padding: 2px 5px; margin-left: 5px;">✕</button>
+        </div>
+        
+        <button id="send-btn">Send</button>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
